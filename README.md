@@ -9,7 +9,7 @@ This is the second project in the Udacity Data Scientist Nano Degree. It is a we
 - sklearn
 - pickle
 
-### Instructions:
+## Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
     - To run ETL pipeline that cleans data and stores in database
@@ -22,7 +22,9 @@ This is the second project in the Udacity Data Scientist Nano Degree. It is a we
 
 3. Go to http://0.0.0.0:3001/
 
-![screenshot](https://github.com/jennymcphail/project2_disaster_pipeline/blob/master/images/screenshot.jpg?raw=true)
+
+## Screenshot
+![screenshot](https://github.com/jennymcphail/project2_disaster_pipeline/blob/main/images/screenshot.JPG?raw=true)
 
 
 
