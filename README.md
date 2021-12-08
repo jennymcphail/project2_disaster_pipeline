@@ -22,6 +22,6 @@ This is the second project in the Udacity Data Scientist Nano Degree. It is a we
 
 3. Go to http://0.0.0.0:3001/
 
-![screenshot](https://github.com/jennymcphail/project2_disaster_pipeline/blob/master/images/screenshot.JPG?)
+![screenshot](https://github.com/jennymcphail/project2_disaster_pipeline/blob/master/images/screenshot.JPG?raw=true)
 
 
