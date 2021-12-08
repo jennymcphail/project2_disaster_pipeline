@@ -24,4 +24,5 @@ This is the second project in the Udacity Data Scientist Nano Degree. It is a we
 
 ![screenshot](https://github.com/jennymcphail/project2_disaster_pipeline/blob/master/images/screenshot.JPG?raw=true)
 
+![seasonal_pricing](https://github.com/jennymcphail/jennymcphail.github.io/blob/master/seasonal_pricing.JPG?raw=true)
 
