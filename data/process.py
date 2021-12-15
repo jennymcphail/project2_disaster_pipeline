@@ -30,7 +30,9 @@ def clean_data(df):
         categories[column] = categories[column].str.split('-').str[1]
         # convert column from string to numeric
         categories[column] = pd.to_numeric(categories[column])
-        # drop the original categories column from `df`
+    # update the 'related' column to set all values to 0 or 1
+    categories.loc[categories['related']==2, ['related']]=1
+    # drop the original categories column from `df`
     df = df.drop('categories', axis=1)
     # concatenate the original dataframe with the new `categories` dataframe
     df = pd.merge(df,categories, left_index=True, right_index=True)
