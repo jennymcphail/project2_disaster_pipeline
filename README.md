@@ -1,6 +1,6 @@
 # project2_disaster_pipeline
 ## Overview
-This is the second project in the Udacity Data Scientist Nano Degree. It is a web app designed to be used in the event of a disaster in order to screen messages on social media and categorise them into one of 36 categories, which will help the agencies dealing with an emergency quickly identify which messages are appeals for aid and which agency should deal with them.
+This is the second project in the [Udacity Data Scientist Nano Degree](https://www.udacity.com/course/data-scientist-nanodegree--nd025/ 'Course Overview'). It is a web app designed to be used in the event of a disaster in order to screen messages on social media and categorise them into one of 36 categories, which will help the agencies dealing with an emergency quickly identify which messages are appeals for aid and which agency should deal with them.
 
 ## Packages Used:
 - pandas
@@ -8,6 +8,14 @@ This is the second project in the Udacity Data Scientist Nano Degree. It is a we
 - nltk
 - sklearn
 - pickle
+
+## Data
+The disaster response data is supplied by [Figure Eight](https://www.figure-eight.com// 'Disaster Response from Figure Eight')
+
+|Data Set|Type|Description|
+|--------|----|-----------|
+|disaster_messages|csv|Social media messages received during disasters|
+|disaster_categories|csv|Categorisation of messages|
 
 ## Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
