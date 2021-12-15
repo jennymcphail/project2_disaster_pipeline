@@ -39,12 +39,23 @@ model = joblib.load("../models/classifier.pkl")
 def index():
     
     # extract data needed for visuals
-    # TODO: Below is an example - modify to extract data for your own visuals
+    # count of messages by genre
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
     
+    # sum of categories, top 20
+    cats = df.drop(['id','original','genre','message','related'],axis=1)
+    names = list(cats.columns)
+    cat_vals = []
+    for col in cats:
+        val = cats[col].sum()
+        cat_vals.append(val)
+    pie_data = pd.DataFrame({'category':names, 'value':cat_vals}).sort_values('value', ascending=False)
+    cat_counts = pie_data[:20]['value']
+    cat_names = list(pie_data[:20]['category'])
+    
     # create visuals
-    # TODO: Below is an example - modify to create your own visuals
+
     graphs = [
         {
             'data': [
@@ -61,6 +72,25 @@ def index():
                 },
                 'xaxis': {
                     'title': "Genre"
+                }
+            }
+        }
+        ,
+        {
+            'data': [
+                Pie(
+                    labels=cat_names,
+                    values=cat_counts
+                )
+            ],
+
+            'layout': {
+                'title': 'Top Twenty Categories',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Category"
                 }
             }
         }
